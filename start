@@ -1,0 +1,11 @@
+#!/bin/bash
+
+pm2 start --name="frontend1" yarn -- production 4050
+pm2 start --name="frontend2" yarn -- production 4051
+pm2 start --name="frontend3" yarn -- production 4052
+pm2 start --name="frontend4" yarn -- production 4053
+
+pm2 start --name="frontend5" yarn -- production 4054
+pm2 start --name="frontend6" yarn -- production 4055
+pm2 start --name="frontend7" yarn -- production 4056
+pm2 start --name="frontend8" yarn -- production 4057

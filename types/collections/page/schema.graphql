@@ -1,0 +1,9 @@
+type Query {
+    Pages: [Page]
+}
+
+type Page {
+    _id: ID
+    title: String
+    createdBy: User
+}

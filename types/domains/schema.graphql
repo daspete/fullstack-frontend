@@ -1,0 +1,11 @@
+type Query {
+    Domains(
+        active: Boolean
+    ): [Domain]
+}
+
+type Domain {
+    _id: ID
+    first_name: String
+    last_name: String
+}

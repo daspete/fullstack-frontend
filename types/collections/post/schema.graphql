@@ -1,0 +1,9 @@
+type Query {
+    Posts: [Post]
+}
+
+type Post {
+    _id: ID
+    title: String
+    createdBy: User
+}

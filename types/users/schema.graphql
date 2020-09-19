@@ -1,0 +1,11 @@
+type Query {
+    Users(
+        active: Boolean
+    ): [User]
+}
+
+type User {
+    _id: ID
+    first_name: String
+    last_name: String
+}

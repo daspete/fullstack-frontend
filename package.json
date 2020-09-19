@@ -1,0 +1,56 @@
+{
+  "name": "manablox-frontend",
+  "version": "1.0.0",
+  "description": "simple web stack builder and configurator",
+  "repository": "https://github.com/manablox/mana-cli.git",
+  "author": "daspete <daspetemail@gmail.com>",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon index.js",
+    "production": "NODE_ENV=production node index.js",
+    "reinstall": "rm -rf node_modules; rm -rf yarn.lock; yarn",
+    "release": "standard-version; git push --follow-tags origin master"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules/*",
+      ".vscode/*"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "commitizen": "^4.2.1",
+    "husky": "^4.3.0",
+    "standard-version": "^9.0.0"
+  },
+  "dependencies": {
+    "@nuxtjs/router": "^1.5.0",
+    "apollo-server-express": "^2.17.0",
+    "axios": "^0.20.0",
+    "commander": "^6.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-vue": "^5.15.1",
+    "find": "^0.3.0",
+    "glob-fs": "^0.1.7",
+    "graphql": "^15.3.0",
+    "graphql-tools": "^6.2.2",
+    "mongodb": "^3.6.2",
+    "nodemon": "^2.0.4",
+    "nuxt": "^2.14.5",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2"
+  }
+}

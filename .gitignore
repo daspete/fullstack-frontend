@@ -1,0 +1,14 @@
+node_modules
+build
+yarn.lock
+package-lock.json
+yarn-error.log
+.env
+.DS_Store
+sw.*
+temp
+.env*
+!.env.example
+.expressvue
+.nuxt*
+*.log
