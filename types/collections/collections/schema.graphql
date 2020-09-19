@@ -1,9 +1,0 @@
-type Query {
-    Collections: [Collection]
-}
-
-type Collection {
-    _id: ID
-    title: String
-    createdBy: User
-}
